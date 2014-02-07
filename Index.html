@@ -4,10 +4,15 @@
     <title>Hello World</title>
 </head>
 <body>
+    <!-- ng = AngularJS -->
+    <!--Tell ng who is the controller-->
+    <!--ng will automatically replace {{}} value from the controller-->
     <h1 ng-controller="HelloWorldCtrl">{{helloworldmessage}}</h1>
 
+    <!--Include the ng script from CDN. You can also download it and point from local directory-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.11/angular.min.js"></script>
     <script type="text/javascript">
+        /*This your controller*/
         function HelloWorldCtrl($scope){
             $scope.helloworldmessage = "Hello World Again!";
         }
