@@ -1,3 +1,6 @@
-# Intellij
-.idea/
-*.iml
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.DS_Store
+.idea
